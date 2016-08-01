@@ -1,3 +1,15 @@
+dialogs
+-------
+
+save:
+warning message when only one shape can be saved and the list is longer (stl and brep)
+
+open:
+optional panel recapitulating what has been loaded and info about topology
+how to extract schema/format info from files that are opened
+
+move the example of cad file dialogs to the examples + plug a viewer in the testing frame
+
 
 tests
 -----
@@ -7,6 +19,13 @@ Python 3 tests
 doctests?
 brep importer and exporter tests
 auto folder creation option in checks.py/check_exporter_filename()
+
+Run tests on Linux and MacOS
+
+general
+-------
+solid reconstruction from iges faces, stl shell
+it is a library, easy on logging (debug for almost everything, info if very important)
 
 iges
 ----

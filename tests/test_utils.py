@@ -22,7 +22,6 @@ def test_path_from_file_inexistent_file():
 def test_path_from_file_too_far_back():
     r"""Test trying to build the path with a relative path that uses .. too many times and reaches root"""
     relpath = "../" * 40
-    # TODO : Linux and MacOS compatibility
     assert aocxchange.utils.path_from_file(__file__, relpath + "test.txt") == "C:\\test.txt"
 
 

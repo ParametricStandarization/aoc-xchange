@@ -40,6 +40,7 @@ class StlImporter(object):
         r"""Read the STL file and stores the result in a TopoDS_Shape"""
         stl_reader = OCC.StlAPI.StlAPI_Reader()
         shape = OCC.TopoDS.TopoDS_Shape()
+        print(self._filename)
         stl_reader.Read(shape, self._filename)
         self._shape = shape
 
@@ -86,6 +87,8 @@ class StlExporter(object):
 
     def write_file(self):
         r"""Write file"""
+        # OCC.StlAPI.SetASCIIMode((self._ascii_mode)
         stl_writer = OCC.StlAPI.StlAPI_Writer()
         stl_writer.Write(self._shape, self._filename, self._ascii_mode)
+        # stl_writer.Write(self._shape, self._filename)
         logger.info("Wrote STL file")

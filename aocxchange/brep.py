@@ -60,6 +60,7 @@ class BrepExporter(object):
     Parameters
     ----------
     filename : str
+
     """
     def __init__(self, filename=None):
         logger.info("BrepExporter instantiated with filename : %s" % filename)
