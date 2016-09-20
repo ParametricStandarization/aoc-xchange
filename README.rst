@@ -5,12 +5,6 @@ aoc-xchange
 
 .. image:: http://img.shields.io/badge/Status-development-ff3300.svg
    :alt: Development
-.. image:: https://img.shields.io/pypi/dm/aocxchange.svg
-   :alt: Downloads
-.. image:: https://travis-ci.org/floatingpointstack/aoc-xchange.svg
-   :alt: Build Status
-.. image:: https://coveralls.io/repos/floatingpointstack/aoc-xchange/badge.svg?branch=master&service=github
-   :alt: Coverage Status
 .. image:: http://img.shields.io/badge/license-GPL_v3-blue.svg
    :target: https://www.gnu.org/copyleft/gpl.html
    :alt: GPL v3
